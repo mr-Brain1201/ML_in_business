@@ -13,9 +13,11 @@
 Модель: catboost
 
 # Клонируем репозиторий и создаем образ
+сборка образа на основе образа python3.8
 ```
 $ git clone https://github.com/mr-Brain1201/ML_in_business.git
 $ cd ML_in_business
+$ docker pull mpbello/python3.8-minimal-dev 
 $ docker build -t course_proj_rest_api .
 ```
 # Запускаем контейнер
