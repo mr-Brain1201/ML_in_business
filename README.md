@@ -13,11 +13,14 @@
 Модель: catboost
 
 # Клонируем репозиторий и создаем образ
+```
 $ git clone https://github.com/mr-Brain1201/ML_in_business.git
 $ cd ML_in_business
 $ docker build -t course_proj_rest_api .
+```
 # Запускаем контейнер
 Здесь Вам нужно создать каталог локально и сохранить туда предобученную модель (<your_local_path_to_pretrained_models> нужно заменить на полный путь к этому каталогу)
-
+```
 $ docker run -d -p 8180:8180 -v /app/app/models:/app/app/models course_proj_rest_api
+```
 # Переходим на localhost:8180
