@@ -21,8 +21,9 @@ $ docker pull mpbello/python3.8-minimal-dev
 $ docker build -t course_proj_rest_api .
 ```
 # Запускаем контейнер
-Здесь Вам нужно создать каталог локально и сохранить туда предобученную модель (<your_local_path_to_pretrained_models> нужно заменить на полный путь к этому каталогу)
+Здесь Вам нужно создать каталог локально и сохранить туда предобученную модель (<your_local_path_to_pretrained_models> нужно заменить на полный путь к этому каталогу). Предобученная модель есть в корне репозитория.
 ```
-$ docker run -d -p 8180:8180 -v /app/app/models:/app/app/models course_proj_rest_api
+$ docker run -d -p 8180:8180 -v <your_local_path_to_pretrained_models>:/app/app/models course_proj_rest_api
 ```
 # Переходим на localhost:8180
+Для тестов можно использовать ноутбук step_3.ipynb
