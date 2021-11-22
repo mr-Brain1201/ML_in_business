@@ -4,10 +4,10 @@
 
 Используемые признаки:
 
-'location' (str);
-'builder' (str);
-'area' (int);
-'age' (float)
+- 'location' (str);
+- 'builder' (str);
+- 'area' (int);
+- 'age' (float)
 Преобразования признаков: столбец 'area' через standardscaler
 
 Модель: catboost
